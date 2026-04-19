@@ -4,7 +4,7 @@ Este proyecto implementa un sistema completo de procesamiento y priorización de
 
 ---
 
-# 🎯 Objetivo del proyecto
+# Objetivo del proyecto
 
 La empresa recibe emails sin ningún tipo de priorización. Este sistema:
 
@@ -16,15 +16,17 @@ La empresa recibe emails sin ningún tipo de priorización. Este sistema:
 
 ---
 
-# 🧱 Arquitectura del proyecto (Por el momento)
-├── src/
-│   ├── api.py        # FastAPI API que expone los emails
-│   ├── client.py     # Cliente para consumir la API
-│
-├── data/
-│   ├── emails.py     # Datos MOCK_EMAILS
-│
-├── main.py        # Orquestador del pipeline completo
+# Arquitectura del proyecto (Por el momento)
+Email Prioritization Pipeline
+
+src/
+- api.py        → FastAPI API que expone emails
+- client.py     → Cliente para consumir API
+
+data/
+- emails.py     → MOCK_EMAILS
+
+main.py         → Ejecuta el pipeline completo
 
 # Instalación
 
