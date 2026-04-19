@@ -8,3 +8,7 @@ app = FastAPI()
 @app.get("/emails")
 def get_emails():
     return MOCK_EMAILS
+
+@app.get("/emails/{email_id}")
+def get_email(email_id: int):
+    return next((e for e in MOCK_EMAILS if e["id"] == email_id), None)
