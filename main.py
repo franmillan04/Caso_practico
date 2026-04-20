@@ -38,9 +38,8 @@ def main():
     print("\nANALIZANDO CON LLM...")
     final_emails = analyze_emails(processed_emails)
     
-    # MOSTRAR RESULTADOS FINALES
     print("\nRESULTADOS COMPLETOS:")
-    for email in final_emails[:3]:  # Solo primeros 3 para no saturar
+    for email in final_emails:
         print(f"\nID: {email['id']}")
         print(f"Sentimiento: {email.get('sentiment', 'N/A')}")
         print(f"Tema: {email.get('topic', 'N/A')}")
