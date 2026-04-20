@@ -46,7 +46,7 @@ venv\Scripts\activate      # Windows
 
 ## 3. Instalar dependencias (Por el momento)
 ```bash
-pip install fastapi uvicorn requests
+pip install fastapi uvicorn requests ollama
 ```
 
 # Ejecución del proyecto
@@ -59,7 +59,14 @@ API disponible en:
 - http://127.0.0.1:8000/emails
 - http://127.0.0.1:8000/docs
 
-## 2. Ejecutar pipeline completo
+## 2. Configuración de Ollama
+1. Descargar **Ollama** desde su página oficial: https://ollama.com/download
+2. Instalar el modelo *gemma3:1b* a través del siguiente comando:
+    ```bash
+    ollama pull gemma3:1b
+    ```
+
+## 3. Ejecutar pipeline completo
 ```bash
 python main.py
 ```
