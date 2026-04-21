@@ -46,7 +46,7 @@ venv\Scripts\activate      # Windows
 
 ## 3. Instalar dependencias (Por el momento)
 ```bash
-pip install fastapi uvicorn requests ollama
+pip install fastapi uvicorn requests ollama streamlit
 ```
 
 # Ejecución del proyecto
@@ -66,10 +66,23 @@ API disponible en:
     ollama pull gemma3:1b
     ```
 
-## 3. Ejecutar pipeline completo
+## 3. Ejecutar pipeline (opcional para comprobar que funciona)
 ```bash
 python main.py
 ```
-Esto ejecuta el consumo de API
+Esto ejecuta el consumo de API, con:
+    Limpia emails
+
+    Llama al LLM
+
+    Calcula score
+
+    Muestra ranking por prioridad
+
+## 4. Ejecutar dashboard (Streamlit)
+```bash
+streamlit run app.py
+```
+Esto levanta una aplicación web local donde se muestra la cola de prioridad de emails y permite ajustar los pesos del scoring en tiempo real.
 
 
