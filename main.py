@@ -54,6 +54,8 @@ def main():
         print(f"Sentimiento: {email.get('sentiment')}")
         print(f"Tema: {email.get('topic')}")
         print(f"Resumen: {email.get('summary')}")
+    
+    return None, final_emails
 
 if __name__ == "__main__":
     main()
